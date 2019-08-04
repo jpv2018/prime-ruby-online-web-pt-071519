@@ -1,4 +1,9 @@
 def prime?(number)
+  if number == 1 
+    return false
+  elsif number == -1
+    return false
+  else
   numbers = (2...number)
   results = [ ]
   numbers.each do |n|
