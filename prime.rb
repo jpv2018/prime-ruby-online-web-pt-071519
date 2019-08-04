@@ -6,11 +6,10 @@ def prime?(number)
     numbers.each do |n|
       results << number % n 
     end
-  end
-  if results.any? {|x| x == 0}
-    return false
-  else 
-    return true
+    if results.any? {|x| x == 0}
+      return false
+    else 
+      return true
   end
   else 
     numbers = (2...number)
@@ -18,7 +17,6 @@ def prime?(number)
     numbers.each do |n|
       results << number % n 
     end
-  end
   if results.any? {|x| x == 0}
     return false
   else 
