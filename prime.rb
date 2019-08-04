@@ -10,7 +10,7 @@ def prime?(number)
       return false
     else 
       return true
-  end
+    end
   else 
     numbers = (2...number)
     results = [ ]
@@ -21,5 +21,6 @@ def prime?(number)
     return false
   else 
     return true
+    end
   end
 end
